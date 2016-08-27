@@ -1,0 +1,581 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ECC530311D6FE181004F612E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ECC530301D6FE181004F612E /* main.m */; };
+		ECC530341D6FE181004F612E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ECC530331D6FE181004F612E /* AppDelegate.m */; };
+		ECC530371D6FE181004F612E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECC530361D6FE181004F612E /* ViewController.m */; };
+		ECC5303A1D6FE181004F612E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECC530381D6FE181004F612E /* Main.storyboard */; };
+		ECC5303C1D6FE181004F612E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECC5303B1D6FE181004F612E /* Assets.xcassets */; };
+		ECC5303F1D6FE181004F612E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECC5303D1D6FE181004F612E /* LaunchScreen.storyboard */; };
+		ECC5304A1D6FE181004F612E /* DTWheelViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ECC530491D6FE181004F612E /* DTWheelViewTests.m */; };
+		ECC530551D6FE181004F612E /* DTWheelViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = ECC530541D6FE181004F612E /* DTWheelViewUITests.m */; };
+		ECC530641D6FE2EC004F612E /* DTWheelView.m in Sources */ = {isa = PBXBuildFile; fileRef = ECC530631D6FE2EC004F612E /* DTWheelView.m */; };
+		ECC5306E1D6FE6DE004F612E /* img1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECC530661D6FE6DE004F612E /* img1.jpg */; };
+		ECC5306F1D6FE6DE004F612E /* img2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECC530671D6FE6DE004F612E /* img2.jpg */; };
+		ECC530701D6FE6DE004F612E /* img3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECC530681D6FE6DE004F612E /* img3.jpg */; };
+		ECC530711D6FE6DE004F612E /* img4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECC530691D6FE6DE004F612E /* img4.jpg */; };
+		ECC530721D6FE6DE004F612E /* img5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECC5306A1D6FE6DE004F612E /* img5.jpg */; };
+		ECC530731D6FE6DE004F612E /* img6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECC5306B1D6FE6DE004F612E /* img6.jpg */; };
+		ECC530741D6FE6DE004F612E /* img7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECC5306C1D6FE6DE004F612E /* img7.jpg */; };
+		ECC530751D6FE6DE004F612E /* img0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECC5306D1D6FE6DE004F612E /* img0.jpg */; };
+		ECC530781D6FE893004F612E /* DTPagerView.m in Sources */ = {isa = PBXBuildFile; fileRef = ECC530771D6FE893004F612E /* DTPagerView.m */; };
+		ECC5307A1D6FEA60004F612E /* default.png in Resources */ = {isa = PBXBuildFile; fileRef = ECC530791D6FEA60004F612E /* default.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ECC530461D6FE181004F612E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECC530241D6FE181004F612E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ECC5302B1D6FE181004F612E;
+			remoteInfo = DTWheelView;
+		};
+		ECC530511D6FE181004F612E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECC530241D6FE181004F612E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ECC5302B1D6FE181004F612E;
+			remoteInfo = DTWheelView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ECC5302C1D6FE181004F612E /* DTWheelView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DTWheelView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECC530301D6FE181004F612E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ECC530321D6FE181004F612E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		ECC530331D6FE181004F612E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		ECC530351D6FE181004F612E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		ECC530361D6FE181004F612E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		ECC530391D6FE181004F612E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ECC5303B1D6FE181004F612E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ECC5303E1D6FE181004F612E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ECC530401D6FE181004F612E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECC530451D6FE181004F612E /* DTWheelViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DTWheelViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECC530491D6FE181004F612E /* DTWheelViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DTWheelViewTests.m; sourceTree = "<group>"; };
+		ECC5304B1D6FE181004F612E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECC530501D6FE181004F612E /* DTWheelViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DTWheelViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECC530541D6FE181004F612E /* DTWheelViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DTWheelViewUITests.m; sourceTree = "<group>"; };
+		ECC530561D6FE181004F612E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECC530621D6FE2EC004F612E /* DTWheelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DTWheelView.h; path = DTWheelView/DTWheelView.h; sourceTree = "<group>"; };
+		ECC530631D6FE2EC004F612E /* DTWheelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DTWheelView.m; path = DTWheelView/DTWheelView.m; sourceTree = "<group>"; };
+		ECC530661D6FE6DE004F612E /* img1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img1.jpg; sourceTree = "<group>"; };
+		ECC530671D6FE6DE004F612E /* img2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img2.jpg; sourceTree = "<group>"; };
+		ECC530681D6FE6DE004F612E /* img3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img3.jpg; sourceTree = "<group>"; };
+		ECC530691D6FE6DE004F612E /* img4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img4.jpg; sourceTree = "<group>"; };
+		ECC5306A1D6FE6DE004F612E /* img5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img5.jpg; sourceTree = "<group>"; };
+		ECC5306B1D6FE6DE004F612E /* img6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img6.jpg; sourceTree = "<group>"; };
+		ECC5306C1D6FE6DE004F612E /* img7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img7.jpg; sourceTree = "<group>"; };
+		ECC5306D1D6FE6DE004F612E /* img0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img0.jpg; sourceTree = "<group>"; };
+		ECC530761D6FE893004F612E /* DTPagerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DTPagerView.h; path = DTWheelView/DTPagerView.h; sourceTree = "<group>"; };
+		ECC530771D6FE893004F612E /* DTPagerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DTPagerView.m; path = DTWheelView/DTPagerView.m; sourceTree = "<group>"; };
+		ECC530791D6FEA60004F612E /* default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ECC530291D6FE181004F612E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECC530421D6FE181004F612E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECC5304D1D6FE181004F612E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ECC530231D6FE181004F612E = {
+			isa = PBXGroup;
+			children = (
+				ECC5302E1D6FE181004F612E /* DTWheelView */,
+				ECC530481D6FE181004F612E /* DTWheelViewTests */,
+				ECC530531D6FE181004F612E /* DTWheelViewUITests */,
+				ECC5302D1D6FE181004F612E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ECC5302D1D6FE181004F612E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ECC5302C1D6FE181004F612E /* DTWheelView.app */,
+				ECC530451D6FE181004F612E /* DTWheelViewTests.xctest */,
+				ECC530501D6FE181004F612E /* DTWheelViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ECC5302E1D6FE181004F612E /* DTWheelView */ = {
+			isa = PBXGroup;
+			children = (
+				ECC530791D6FEA60004F612E /* default.png */,
+				ECC530651D6FE6DE004F612E /* images */,
+				ECC530321D6FE181004F612E /* AppDelegate.h */,
+				ECC530331D6FE181004F612E /* AppDelegate.m */,
+				ECC530351D6FE181004F612E /* ViewController.h */,
+				ECC530361D6FE181004F612E /* ViewController.m */,
+				ECC530621D6FE2EC004F612E /* DTWheelView.h */,
+				ECC530631D6FE2EC004F612E /* DTWheelView.m */,
+				ECC530761D6FE893004F612E /* DTPagerView.h */,
+				ECC530771D6FE893004F612E /* DTPagerView.m */,
+				ECC530381D6FE181004F612E /* Main.storyboard */,
+				ECC5303B1D6FE181004F612E /* Assets.xcassets */,
+				ECC5303D1D6FE181004F612E /* LaunchScreen.storyboard */,
+				ECC530401D6FE181004F612E /* Info.plist */,
+				ECC5302F1D6FE181004F612E /* Supporting Files */,
+			);
+			path = DTWheelView;
+			sourceTree = "<group>";
+		};
+		ECC5302F1D6FE181004F612E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ECC530301D6FE181004F612E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ECC530481D6FE181004F612E /* DTWheelViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				ECC530491D6FE181004F612E /* DTWheelViewTests.m */,
+				ECC5304B1D6FE181004F612E /* Info.plist */,
+			);
+			path = DTWheelViewTests;
+			sourceTree = "<group>";
+		};
+		ECC530531D6FE181004F612E /* DTWheelViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ECC530541D6FE181004F612E /* DTWheelViewUITests.m */,
+				ECC530561D6FE181004F612E /* Info.plist */,
+			);
+			path = DTWheelViewUITests;
+			sourceTree = "<group>";
+		};
+		ECC530651D6FE6DE004F612E /* images */ = {
+			isa = PBXGroup;
+			children = (
+				ECC5306D1D6FE6DE004F612E /* img0.jpg */,
+				ECC530661D6FE6DE004F612E /* img1.jpg */,
+				ECC530671D6FE6DE004F612E /* img2.jpg */,
+				ECC530681D6FE6DE004F612E /* img3.jpg */,
+				ECC530691D6FE6DE004F612E /* img4.jpg */,
+				ECC5306A1D6FE6DE004F612E /* img5.jpg */,
+				ECC5306B1D6FE6DE004F612E /* img6.jpg */,
+				ECC5306C1D6FE6DE004F612E /* img7.jpg */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ECC5302B1D6FE181004F612E /* DTWheelView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECC530591D6FE181004F612E /* Build configuration list for PBXNativeTarget "DTWheelView" */;
+			buildPhases = (
+				ECC530281D6FE181004F612E /* Sources */,
+				ECC530291D6FE181004F612E /* Frameworks */,
+				ECC5302A1D6FE181004F612E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DTWheelView;
+			productName = DTWheelView;
+			productReference = ECC5302C1D6FE181004F612E /* DTWheelView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ECC530441D6FE181004F612E /* DTWheelViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECC5305C1D6FE181004F612E /* Build configuration list for PBXNativeTarget "DTWheelViewTests" */;
+			buildPhases = (
+				ECC530411D6FE181004F612E /* Sources */,
+				ECC530421D6FE181004F612E /* Frameworks */,
+				ECC530431D6FE181004F612E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ECC530471D6FE181004F612E /* PBXTargetDependency */,
+			);
+			name = DTWheelViewTests;
+			productName = DTWheelViewTests;
+			productReference = ECC530451D6FE181004F612E /* DTWheelViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ECC5304F1D6FE181004F612E /* DTWheelViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECC5305F1D6FE181004F612E /* Build configuration list for PBXNativeTarget "DTWheelViewUITests" */;
+			buildPhases = (
+				ECC5304C1D6FE181004F612E /* Sources */,
+				ECC5304D1D6FE181004F612E /* Frameworks */,
+				ECC5304E1D6FE181004F612E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ECC530521D6FE181004F612E /* PBXTargetDependency */,
+			);
+			name = DTWheelViewUITests;
+			productName = DTWheelViewUITests;
+			productReference = ECC530501D6FE181004F612E /* DTWheelViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ECC530241D6FE181004F612E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Teplot_03;
+				TargetAttributes = {
+					ECC5302B1D6FE181004F612E = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = NF5Z4JC752;
+					};
+					ECC530441D6FE181004F612E = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = ECC5302B1D6FE181004F612E;
+					};
+					ECC5304F1D6FE181004F612E = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = ECC5302B1D6FE181004F612E;
+					};
+				};
+			};
+			buildConfigurationList = ECC530271D6FE181004F612E /* Build configuration list for PBXProject "DTWheelView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ECC530231D6FE181004F612E;
+			productRefGroup = ECC5302D1D6FE181004F612E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ECC5302B1D6FE181004F612E /* DTWheelView */,
+				ECC530441D6FE181004F612E /* DTWheelViewTests */,
+				ECC5304F1D6FE181004F612E /* DTWheelViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ECC5302A1D6FE181004F612E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECC530721D6FE6DE004F612E /* img5.jpg in Resources */,
+				ECC530701D6FE6DE004F612E /* img3.jpg in Resources */,
+				ECC5303F1D6FE181004F612E /* LaunchScreen.storyboard in Resources */,
+				ECC530711D6FE6DE004F612E /* img4.jpg in Resources */,
+				ECC5306F1D6FE6DE004F612E /* img2.jpg in Resources */,
+				ECC5303C1D6FE181004F612E /* Assets.xcassets in Resources */,
+				ECC530741D6FE6DE004F612E /* img7.jpg in Resources */,
+				ECC5306E1D6FE6DE004F612E /* img1.jpg in Resources */,
+				ECC530731D6FE6DE004F612E /* img6.jpg in Resources */,
+				ECC5303A1D6FE181004F612E /* Main.storyboard in Resources */,
+				ECC530751D6FE6DE004F612E /* img0.jpg in Resources */,
+				ECC5307A1D6FEA60004F612E /* default.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECC530431D6FE181004F612E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECC5304E1D6FE181004F612E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ECC530281D6FE181004F612E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECC530781D6FE893004F612E /* DTPagerView.m in Sources */,
+				ECC530641D6FE2EC004F612E /* DTWheelView.m in Sources */,
+				ECC530371D6FE181004F612E /* ViewController.m in Sources */,
+				ECC530341D6FE181004F612E /* AppDelegate.m in Sources */,
+				ECC530311D6FE181004F612E /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECC530411D6FE181004F612E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECC5304A1D6FE181004F612E /* DTWheelViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECC5304C1D6FE181004F612E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECC530551D6FE181004F612E /* DTWheelViewUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ECC530471D6FE181004F612E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ECC5302B1D6FE181004F612E /* DTWheelView */;
+			targetProxy = ECC530461D6FE181004F612E /* PBXContainerItemProxy */;
+		};
+		ECC530521D6FE181004F612E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ECC5302B1D6FE181004F612E /* DTWheelView */;
+			targetProxy = ECC530511D6FE181004F612E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ECC530381D6FE181004F612E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ECC530391D6FE181004F612E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ECC5303D1D6FE181004F612E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ECC5303E1D6FE181004F612E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ECC530571D6FE181004F612E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		ECC530581D6FE181004F612E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ECC5305A1D6FE181004F612E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = DTWheelView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.teplot.DTWheelView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		ECC5305B1D6FE181004F612E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = DTWheelView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.teplot.DTWheelView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		ECC5305D1D6FE181004F612E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DTWheelViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.teplot.DTWheelViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DTWheelView.app/DTWheelView";
+			};
+			name = Debug;
+		};
+		ECC5305E1D6FE181004F612E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DTWheelViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.teplot.DTWheelViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DTWheelView.app/DTWheelView";
+			};
+			name = Release;
+		};
+		ECC530601D6FE181004F612E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DTWheelViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.teplot.DTWheelViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DTWheelView;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		ECC530611D6FE181004F612E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DTWheelViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.teplot.DTWheelViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DTWheelView;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ECC530271D6FE181004F612E /* Build configuration list for PBXProject "DTWheelView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECC530571D6FE181004F612E /* Debug */,
+				ECC530581D6FE181004F612E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECC530591D6FE181004F612E /* Build configuration list for PBXNativeTarget "DTWheelView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECC5305A1D6FE181004F612E /* Debug */,
+				ECC5305B1D6FE181004F612E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECC5305C1D6FE181004F612E /* Build configuration list for PBXNativeTarget "DTWheelViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECC5305D1D6FE181004F612E /* Debug */,
+				ECC5305E1D6FE181004F612E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECC5305F1D6FE181004F612E /* Build configuration list for PBXNativeTarget "DTWheelViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECC530601D6FE181004F612E /* Debug */,
+				ECC530611D6FE181004F612E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ECC530241D6FE181004F612E /* Project object */;
+}
