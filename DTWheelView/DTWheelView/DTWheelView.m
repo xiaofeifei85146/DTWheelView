@@ -177,7 +177,7 @@
         NSLog(@"%ld",pagerV.tag);
         [self.scrollView addSubview:pagerV];
         
-        if (i == 0) {
+        if (i == _imgs.count/9*4) {
             pagerV.sizeStyle = PagerViewSizeStyleBiger;
             lastPagerView = pagerV;
         }else {
@@ -186,7 +186,7 @@
         
         if (i == imgs.count-1) {
             self.scrollView.contentSize = CGSizeMake(CGRectGetMaxX(pagerV.frame)+gap, CGRectGetHeight(self.frame));
-//            self.scrollView.contentOffset = CGPointMake(_imgs.count*CGRectGetWidth(self.frame)/6, 0);
+            self.scrollView.contentOffset = CGPointMake(_imgs.count/9*4*(CGRectGetWidth(self.frame)/3), 0);
         }
     }
 }
