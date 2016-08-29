@@ -11,7 +11,7 @@
 
 
 
-@interface ViewController ()
+@interface ViewController ()<DTWheelViewDelegate>
 
 @end
 
@@ -28,13 +28,18 @@
         [mutArr addObject:@{@"title":name,@"content":[NSString stringWithFormat:@"我是第%d张图片，我是第%d张图片，我是第%d张图片，我是第%d张图片",i,i,i,i], @"img":img}];
     }
     
-    [DTWheelView showController:self frame:CGRectMake(0, 100, ScreenSize.width, 300) imgs:mutArr];
+    DTWheelView *wheelView = [DTWheelView showController:self frame:CGRectMake(0, 100, ScreenSize.width, 300) imgs:mutArr];
+    wheelView.delegate = self;
     
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)wheelViewDidClickMidItem:(DTWheelView *)wheelView {
+    NSLog(@"点击了中间的那一个");
 }
 
 @end

@@ -7,13 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-@class DTPagerView;
-
-@protocol DTPagerViewDelegate <NSObject>
-
-- (void)pagerViewClicked:(DTPagerView *)pagerView;
-
-@end
 
 typedef enum : NSUInteger {
     PagerViewSizeStyleBiger,
@@ -21,7 +14,6 @@ typedef enum : NSUInteger {
 } PagerViewSizeStyle;
 
 @interface DTPagerView : UIView
-@property (nonatomic, weak) id<DTPagerViewDelegate> delegate;
 
 @property (nonatomic, strong) NSDictionary *data;
 

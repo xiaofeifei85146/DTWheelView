@@ -12,7 +12,7 @@
 //随机颜色
 #define randomColor [UIColor colorWithRed:arc4random()%256/256.0 green:arc4random()%256/256.0 blue:arc4random()%256/256.0 alpha:1];
 
-@interface DTWheelView ()
+@interface DTWheelView ()<UIGestureRecognizerDelegate>
 {
     DTPagerView *lastPagerView;
 }
@@ -29,7 +29,12 @@
     
     DTWheelView *wheel = [[DTWheelView alloc] initWithFrame:frame];
     
-    wheel.imgs = imgs;
+    NSMutableArray *temp = [NSMutableArray array];
+    for (int i = 0; i<9; i++) {
+        [temp addObjectsFromArray:imgs];
+    }
+    
+    wheel.imgs = temp;
     
     [ctr.view addSubview:wheel];
     
@@ -47,6 +52,7 @@
 
 //中间加上20 两边各去掉10
 - (void)setupWithFrame:(CGRect)frame {
+    self.userInteractionEnabled = YES;
     self.backgroundColor = [UIColor lightGrayColor];
     _imgs = [NSArray array];
     
@@ -57,15 +63,52 @@
     _scrollView.userInteractionEnabled = NO;
     [self addSubview:_scrollView];
     
+    //手势
     UISwipeGestureRecognizer *swipeLeft = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeAction:)];
+    swipeLeft.delegate = self;
     swipeLeft.direction = UISwipeGestureRecognizerDirectionLeft;
     [self addGestureRecognizer:swipeLeft];
-    //UISwipeGestureRecognizerDirectionRight
+    
     UISwipeGestureRecognizer *swipeRight = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeAction:)];
+    swipeRight.delegate = self;
     swipeRight.direction = UISwipeGestureRecognizerDirectionRight;
     [self addGestureRecognizer:swipeRight];
-    self.userInteractionEnabled = YES;
+    
+    
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(wheelViewTapAction:)];
+    tap.numberOfTapsRequired = 1;
+    tap.numberOfTouchesRequired = 1;
+    [self addGestureRecognizer:tap];
+    [tap requireGestureRecognizerToFail:swipeLeft];
+    [tap requireGestureRecognizerToFail:swipeRight];
 }
+
+- (void)wheelViewTapAction :(UITapGestureRecognizer *)sender{
+
+    //在这里获取点击的frame
+    CGPoint point = [sender locationInView:sender.view];
+    
+    CGFloat x = point.x;
+//    CGFloat y = point.y;
+//    NSLog(@"touch (x, y) is (%f, %f)", x, y);
+    
+    //获取x和view的关系
+    CGFloat wheelWidth = self.frame.size.width;
+    if (x<wheelWidth/3) {
+        //        NSLog(@"点击了左边");
+        [self gotoPagerNext:NO];
+    }else if (x>wheelWidth/3 && x<wheelWidth*2/3) {
+//        NSLog(@"点击了中间");
+        if ([self.delegate respondsToSelector:@selector(wheelViewDidClickMidItem:)]) {
+            [self.delegate wheelViewDidClickMidItem:self];
+        }
+    }else if (x>wheelWidth*2/3) {
+        //        NSLog(@"点击了右边");
+        [self gotoPagerNext:YES];
+    }
+    
+}
+
 
 - (void)swipeAction:(UISwipeGestureRecognizer *)gesture {
     
@@ -74,14 +117,12 @@
     switch (direction) {
         case UISwipeGestureRecognizerDirectionLeft:
         {
-            NSLog(@"左滑了");
             [self gotoPagerNext:YES];
         }
             break;
             
         case UISwipeGestureRecognizerDirectionRight:
         {
-            NSLog(@"右滑了");
             [self gotoPagerNext:NO];
         }
             break;
@@ -94,7 +135,7 @@
 
 - (void)gotoPagerNext:(BOOL)isNext {
     
-    NSLog(@"%@",lastPagerView.data[@"title"]);
+//    NSLog(@"%@",lastPagerView.data[@"title"]);
     if (isNext) {
         //如果左滑，是最后一个item就不变
         if (lastPagerView.tag == _imgs.count+10-1) return;
@@ -145,6 +186,7 @@
         
         if (i == imgs.count-1) {
             self.scrollView.contentSize = CGSizeMake(CGRectGetMaxX(pagerV.frame)+gap, CGRectGetHeight(self.frame));
+//            self.scrollView.contentOffset = CGPointMake(_imgs.count*CGRectGetWidth(self.frame)/6, 0);
         }
     }
 }

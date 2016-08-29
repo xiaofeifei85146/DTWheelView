@@ -47,15 +47,8 @@
     _titleL.frame = CGRectMake(width*0.05, CGRectGetMaxY(_imgV.frame), width*0.9, 20);
     _contentL.frame = CGRectMake(0, CGRectGetMaxY(_titleL.frame), width, height-5-CGRectGetMaxY(_titleL.frame));
     
-    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapAction)];
-    [self addGestureRecognizer:tap];
 }
 
-- (void)tapAction {
-    if ([self.delegate respondsToSelector:@selector(pagerViewClicked:)]) {
-        [self.delegate pagerViewClicked:self];
-    }
-}
 
 - (void)setData:(NSDictionary *)data {
     _data = data;
