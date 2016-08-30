@@ -20,6 +20,6 @@
 @interface DTWheelView : UIView
 @property (nonatomic, weak) id<DTWheelViewDelegate> delegate;
 
-+ (instancetype)showController:(UIViewController *)ctr frame:(CGRect)frame imgs:(NSArray *)imgs;
++ (instancetype)wheelWithFrame:(CGRect)frame imgs:(NSArray *)imgs;
 
 @end

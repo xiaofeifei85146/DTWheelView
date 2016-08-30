@@ -28,8 +28,9 @@
         [mutArr addObject:@{@"title":name,@"content":[NSString stringWithFormat:@"我是第%d张图片，我是第%d张图片，我是第%d张图片，我是第%d张图片",i,i,i,i], @"img":img}];
     }
     
-    DTWheelView *wheelView = [DTWheelView showController:self frame:CGRectMake(0, 100, ScreenSize.width, 300) imgs:mutArr];
+    DTWheelView *wheelView = [DTWheelView wheelWithFrame:CGRectMake(0, 100, ScreenSize.width, 300) imgs:mutArr];
     wheelView.delegate = self;
+    [self.view addSubview:wheelView];
     
 }
 

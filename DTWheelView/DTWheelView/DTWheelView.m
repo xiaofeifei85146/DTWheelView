@@ -25,7 +25,7 @@
 
 @implementation DTWheelView
 
-+ (instancetype)showController:(UIViewController *)ctr frame:(CGRect)frame imgs:(NSArray *)imgs{
++ (instancetype)wheelWithFrame:(CGRect)frame imgs:(NSArray *)imgs{
     
     DTWheelView *wheel = [[DTWheelView alloc] initWithFrame:frame];
     
@@ -35,9 +35,7 @@
     }
     
     wheel.imgs = temp;
-    
-    [ctr.view addSubview:wheel];
-    
+        
     return wheel;
 }
 
@@ -50,7 +48,6 @@
     return self;
 }
 
-//中间加上20 两边各去掉10
 - (void)setupWithFrame:(CGRect)frame {
     self.userInteractionEnabled = YES;
     self.backgroundColor = [UIColor lightGrayColor];
@@ -73,7 +70,6 @@
     swipeRight.delegate = self;
     swipeRight.direction = UISwipeGestureRecognizerDirectionRight;
     [self addGestureRecognizer:swipeRight];
-    
     
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(wheelViewTapAction:)];
     tap.numberOfTapsRequired = 1;
