@@ -53,8 +53,10 @@
     self.backgroundColor = [UIColor lightGrayColor];
     _imgs = [NSArray array];
     
+    CGFloat width = self.frame.size.width;
+    
     _scrollView = [[UIScrollView alloc] init];
-    _scrollView.frame = CGRectMake(125, 0, CGRectGetWidth(self.frame)-250, CGRectGetHeight(self.frame));
+    _scrollView.frame = CGRectMake(width/3, 0, CGRectGetWidth(self.frame)/3, CGRectGetHeight(self.frame));
     _scrollView.pagingEnabled = YES;
     _scrollView.clipsToBounds = NO;
     _scrollView.userInteractionEnabled = NO;
@@ -151,12 +153,16 @@
         
         _scrollView.contentOffset = currentOffset;
         lastPagerView.sizeStyle = PagerViewSizeStyleSmaller;
+        if (weakSelf) {
+            DTPagerView *pagerView = [weakSelf.scrollView viewWithTag:lastPagerView.tag+(isNext?1:(-1))];
+            pagerView.sizeStyle = PagerViewSizeStyleBiger;
+            lastPagerView = pagerView;
+        }
         
-        DTPagerView *pagerView = [weakSelf.scrollView viewWithTag:lastPagerView.tag+(isNext?1:(-1))];
-        pagerView.sizeStyle = PagerViewSizeStyleBiger;
-        lastPagerView = pagerView;
     } completion:^(BOOL finished) {
-        weakSelf.userInteractionEnabled = YES;
+        if (weakSelf) {
+            weakSelf.userInteractionEnabled = YES;
+        }
     }];
     
 }
@@ -170,7 +176,7 @@
         DTPagerView *pagerV = [[DTPagerView alloc] initWithFrame:CGRectMake(gap + (2*gap+width)*i, 0, width, CGRectGetHeight(self.frame))];
         pagerV.data = imgs[i];
         pagerV.tag = 10+i;
-        NSLog(@"%ld",pagerV.tag);
+
         [self.scrollView addSubview:pagerV];
         
         if (i == _imgs.count/9*4) {
