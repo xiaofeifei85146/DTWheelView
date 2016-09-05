@@ -63,7 +63,7 @@
         case PagerViewSizeStyleSmaller:
         {
             self.layer.borderWidth = 0;
-            self.alpha = 0.3;
+            self.alpha = 0.7;
             self.transform = CGAffineTransformMakeScale(0.9f, 0.9f);
         }
             break;

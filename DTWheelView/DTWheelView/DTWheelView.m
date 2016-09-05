@@ -50,7 +50,6 @@
 
 - (void)setupWithFrame:(CGRect)frame {
     self.userInteractionEnabled = YES;
-    self.backgroundColor = [UIColor lightGrayColor];
     _imgs = [NSArray array];
     
     CGFloat width = self.frame.size.width;
