@@ -108,7 +108,6 @@
 			isa = PBXGroup;
 			children = (
 				ECC530791D6FEA60004F612E /* default.png */,
-				EC60FF0E1D7E522900EA9A59 /* DTWheel.gif */,
 				ECC530621D6FE2EC004F612E /* DTWheelView.h */,
 				ECC530631D6FE2EC004F612E /* DTWheelView.m */,
 				ECC530761D6FE893004F612E /* DTPagerView.h */,
@@ -140,6 +139,7 @@
 		ECC5302E1D6FE181004F612E /* DTWheelView */ = {
 			isa = PBXGroup;
 			children = (
+				EC60FF0E1D7E522900EA9A59 /* DTWheel.gif */,
 				EC60FF101D7E523900EA9A59 /* DTWheelView */,
 				ECC530651D6FE6DE004F612E /* images */,
 				ECC530321D6FE181004F612E /* AppDelegate.h */,
