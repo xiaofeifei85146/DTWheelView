@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC60FF0F1D7E522900EA9A59 /* DTWheel.gif in Resources */ = {isa = PBXBuildFile; fileRef = EC60FF0E1D7E522900EA9A59 /* DTWheel.gif */; };
 		ECC530311D6FE181004F612E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ECC530301D6FE181004F612E /* main.m */; };
 		ECC530341D6FE181004F612E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ECC530331D6FE181004F612E /* AppDelegate.m */; };
 		ECC530371D6FE181004F612E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECC530361D6FE181004F612E /* ViewController.m */; };
@@ -46,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EC60FF0E1D7E522900EA9A59 /* DTWheel.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = DTWheel.gif; sourceTree = "<group>"; };
 		ECC5302C1D6FE181004F612E /* DTWheelView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DTWheelView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECC530301D6FE181004F612E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ECC530321D6FE181004F612E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -102,6 +104,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EC60FF101D7E523900EA9A59 /* DTWheelView */ = {
+			isa = PBXGroup;
+			children = (
+				ECC530791D6FEA60004F612E /* default.png */,
+				EC60FF0E1D7E522900EA9A59 /* DTWheel.gif */,
+				ECC530621D6FE2EC004F612E /* DTWheelView.h */,
+				ECC530631D6FE2EC004F612E /* DTWheelView.m */,
+				ECC530761D6FE893004F612E /* DTPagerView.h */,
+				ECC530771D6FE893004F612E /* DTPagerView.m */,
+			);
+			name = DTWheelView;
+			sourceTree = "<group>";
+		};
 		ECC530231D6FE181004F612E = {
 			isa = PBXGroup;
 			children = (
@@ -125,16 +140,12 @@
 		ECC5302E1D6FE181004F612E /* DTWheelView */ = {
 			isa = PBXGroup;
 			children = (
-				ECC530791D6FEA60004F612E /* default.png */,
+				EC60FF101D7E523900EA9A59 /* DTWheelView */,
 				ECC530651D6FE6DE004F612E /* images */,
 				ECC530321D6FE181004F612E /* AppDelegate.h */,
 				ECC530331D6FE181004F612E /* AppDelegate.m */,
 				ECC530351D6FE181004F612E /* ViewController.h */,
 				ECC530361D6FE181004F612E /* ViewController.m */,
-				ECC530621D6FE2EC004F612E /* DTWheelView.h */,
-				ECC530631D6FE2EC004F612E /* DTWheelView.m */,
-				ECC530761D6FE893004F612E /* DTPagerView.h */,
-				ECC530771D6FE893004F612E /* DTPagerView.m */,
 				ECC530381D6FE181004F612E /* Main.storyboard */,
 				ECC5303B1D6FE181004F612E /* Assets.xcassets */,
 				ECC5303D1D6FE181004F612E /* LaunchScreen.storyboard */,
@@ -300,6 +311,7 @@
 				ECC530731D6FE6DE004F612E /* img6.jpg in Resources */,
 				ECC5303A1D6FE181004F612E /* Main.storyboard in Resources */,
 				ECC530751D6FE6DE004F612E /* img0.jpg in Resources */,
+				EC60FF0F1D7E522900EA9A59 /* DTWheel.gif in Resources */,
 				ECC5307A1D6FEA60004F612E /* default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
